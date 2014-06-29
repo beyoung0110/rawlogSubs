@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>Raw Log Subscription</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <!--link href="css/style.css" rel="stylesheet" type="text/css"-->
+<style type="text/css">
+.inner{
+	position: relative;
+	padding-bottom: 50px;
+	clear: both;
+	width: 960px;
+    margin: 0 auto;
+}
+
+</style>
+	</head>
+<body>
+<div class="inner">
+	<h2>Raw Log Subscription</h2>
+
+	<div class="btn-group" data-toggle="buttons-checkbox" style="margin-bottom:10px">
+	  <button type="button" class="btn btn-default" id="rawLog">Raw Log</button>
+	  <button type="button" class="btn btn-default" id="mySubs">My Subscription</button>
+	</div>
+
+	<div style="margin-bottom:10px">
+		WorkLoad:
+		<div class="btn-group">
+				<button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+				Choose a WorkLoad<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu">
+				  <li><a href="#">WorkLoad1</a></li>
+				  <li><a href="#">WorkLoad2</a></li>
+				  <li><a href="#">WorkLoad3</a></li>
+				  <li><a href="#">WorkLoad4</a></li>
+				</ul>
+		</div>
+		LogType:
+		<div class="btn-group">
+				<button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+				Choose a LogType<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu">
+				  <li><a href="#">LogType1</a></li>
+				  <li><a href="#">LogType2</a></li>
+				  <li><a href="#">LogType3</a></li>
+				  <li><a href="#">LogType4</a></li>
+				</ul>
+		</div>
+		<button type="button" class="btn btn-default">Subscript</button>
+	</div>
+
+	<div style="margin-bottom:10px">
+		<table style="width:90%;border:1px solid black;">
+		<tr>
+		<td width="30px"><input type="checkbox"></td><td>WorkLoad</td><td>LogType</td><td>Completeness</td><td>time</td>
+		</tr>
+		<tr>
+		<td ><input type="checkbox"><td>WorkLoad1</td><td>LogType1</td><td>Completeness1</td><td>time</td>
+		</tr>
+		<tr>
+		<td ><input type="checkbox"><td>WorkLoad2</td><td>LogType2</td><td>Completeness2</td><td>time</td>
+		</tr>
+		<tr>
+		<td ><input type="checkbox"><td>WorkLoad3</td><td>LogType3</td><td>Completeness3</td><td>time</td>
+		</tr>
+		<tr>
+		<td ><input type="checkbox"><td>WorkLoad4</td><td>LogType4</td><td>Completeness4</td><td>time</td>
+		</tr>
+		<tr>
+		<td ><input type="checkbox"><td>WorkLoad5</td><td>LogType5</td><td>Completeness5</td><td>time</td>
+		</tr>
+		<tr>
+		<td ><input type="checkbox"><td>WorkLoad1</td><td>LogType1</td><td>Completeness1</td><td>time</td>
+		</tr>
+		<tr>
+		<td ><input type="checkbox"><td>WorkLoad2</td><td>LogType2</td><td>Completeness2</td><td>time</td>
+		</tr>
+		<tr>
+		<td ><input type="checkbox"><td>WorkLoad3</td><td>LogType3</td><td>Completeness3</td><td>time</td>
+		</tr>
+		<tr>
+		<td ><input type="checkbox"><td>WorkLoad4</td><td>LogType4</td><td>Completeness4</td><td>time</td>
+		</tr>
+		<tr>
+		<td ><input type="checkbox"><td>WorkLoad5</td><td>LogType5</td><td>Completeness5</td><td>time</td>
+		</tr>
+		</table>
+	</div>
+</div>
+	<script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script>
+	$(document).ready( function() {
+		$("#rawLog").click();
+	})
+	</script>
+    <!--script src="js/farewell.js" type="text/javascript"></script-->
+</body>
+</html>
